@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/scene_room"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:background="@drawable/room_br"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_choose_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tv_choose_person"
+            android:textColor="@color/contecst_menu"
+            android:gravity="top"
+            />
+
+        <Button
+            android:id="@+id/clear_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/bt_add" />
+
+        <Button
+            android:id="@+id/bt_choose_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:layout_weight="1"
+            android:textColor="@color/contecst_menu"
+            android:text="@string/tv_choose_room"
+            />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_rooms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fl_room_pool"
+                android:layout_width="@dimen/room_width"
+                android:layout_height="@dimen/room_height"
+                android:layout_margin="@dimen/margin_room"
+                android:background="@drawable/room_pool">
+
+                <LinearLayout
+                    android:id="@+id/ll_avatars_in_room_pool"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/avatar_height"
+                    android:layout_gravity="top"
+                    android:clickable="true"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/avatar_width"
+                        android:layout_height="@dimen/avatar_height"
+                        android:src="@drawable/img_avatar_mother" />
+                </LinearLayout>
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/fl_room_balcon"
+                android:layout_width="@dimen/room_width"
+                android:layout_height="@dimen/room_height"
+                android:layout_margin="@dimen/margin_room"
+                android:background="@drawable/room_balcon">
+
+                <LinearLayout
+                    android:id="@+id/ll_avatars_in_room_balcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/avatar_height"
+                    android:layout_gravity="top"
+                    android:clickable="true"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_room_kitchen"
+                android:layout_width="@dimen/room_width"
+                android:layout_height="@dimen/room_height"
+                android:layout_margin="@dimen/margin_room"
+                android:background="@drawable/room_kitchen">
+
+                <LinearLayout
+                    android:id="@+id/ll_avatars_in_room_kitchen"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/avatar_height"
+                    android:layout_gravity="top"
+                    android:clickable="true"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_room_cinema"
+                android:layout_width="@dimen/room_width"
+                android:layout_height="@dimen/room_height"
+                android:layout_margin="@dimen/margin_room"
+                android:background="@drawable/room_cinema">
+
+                <LinearLayout
+                    android:id="@+id/ll_avatars_in_room_cinema"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/avatar_height"
+                    android:layout_gravity="top"
+                    android:clickable="true"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_room_bathroom"
+                android:layout_width="@dimen/room_width"
+                android:layout_height="@dimen/room_height"
+                android:layout_margin="@dimen/margin_room"
+                android:background="@drawable/room_bathroom">
+
+                <LinearLayout
+                    android:id="@+id/ll_avatars_in_room_bathroom"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/avatar_height"
+                    android:layout_gravity="top"
+                    android:clickable="true"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_room_br"
+                android:layout_width="@dimen/room_width"
+                android:layout_height="@dimen/room_height"
+                android:layout_margin="@dimen/margin_room"
+                android:background="@drawable/room_br">
+
+                <LinearLayout
+                    android:id="@+id/ll_avatars_in_room_br"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/avatar_height"
+                    android:layout_gravity="top"
+                    android:clickable="true"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_room_old_sis"
+                android:layout_width="@dimen/room_width"
+                android:layout_height="@dimen/room_height"
+                android:layout_margin="@dimen/margin_room"
+                android:background="@drawable/room_old_sis">
+
+                <LinearLayout
+                    android:id="@+id/ll_avatars_in_room_old_sis"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/avatar_height"
+                    android:layout_gravity="top"
+                    android:clickable="true"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_room_mother"
+                android:layout_width="@dimen/room_width"
+                android:layout_height="@dimen/room_height"
+                android:layout_margin="@dimen/margin_room"
+                android:background="@drawable/room_mother">
+
+                <LinearLayout
+                    android:id="@+id/ll_avatars_in_room_mother"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/avatar_height"
+                    android:layout_gravity="top"
+                    android:clickable="true"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_map"
+                android:layout_width="@dimen/room_width"
+                android:layout_height="@dimen/room_height"
+                android:layout_margin="@dimen/margin_room"
+                >
+
+                <LinearLayout
+                    android:id="@+id/ll_avatars_in_map"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/avatar_height"
+                    android:layout_gravity="top"
+                    android:clickable="true"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
